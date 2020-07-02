@@ -24,7 +24,7 @@ class Marque
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $libelle;
+    private $libele;
 
     /**
      * @ORM\OneToMany(targetEntity=Articles::class, mappedBy="marque")
@@ -41,14 +41,14 @@ class Marque
         return $this->id;
     }
 
-    public function getLibelle(): ?string
+    public function getLibele(): ?string
     {
-        return $this->libelle;
+        return $this->libele;
     }
 
-    public function setLibelle(string $libelle): self
+    public function setLibele(string $libele): self
     {
-        $this->libelle = $libelle;
+        $this->libele = $libele;
 
         return $this;
     }
